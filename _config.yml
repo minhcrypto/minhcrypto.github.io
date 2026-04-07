@@ -36,6 +36,14 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 include:
   - _pages
 
+collections:
+  information_theory:
+    output: true
+    permalink: /information-theory/:name/
+  cryptography:
+    output: true
+    permalink: /cryptography/:name/
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -77,16 +85,7 @@ author:
     #   url: "https://instagram.com/"
 
 footer:
-  links:
-#     - label: "Twitter"
-#       icon: "fab fa-fw fa-twitter-square"
-#       url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/mayha1"
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       url: "https://instagram.com/"
+  links: []
 
 comments:
   provider: "utterances"
@@ -117,6 +116,22 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # information_theory
+  - scope:
+      path: ""
+      type: information_theory
+    values:
+      layout: chapter
+      author_profile: false
+      read_time: true
+  # cryptography
+  - scope:
+      path: ""
+      type: cryptography
+    values:
+      layout: chapter
+      author_profile: false
+      read_time: true
 
 category_archive:
   type: liquid

@@ -1,0 +1,32 @@
+---
+layout: single
+---
+
+{{ content }}
+
+{% assign all_chapters = site[page.collection] | sort: "chapter" %}
+{% assign total = all_chapters | size %}
+{% for ch in all_chapters %}
+  {% if ch.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+<nav class="chapter-nav" style="display:flex; justify-content:space-between; margin-top:3rem; padding-top:1rem; border-top:1px solid #e8e8e8;">
+  {% if current_index > 0 %}
+    {% assign prev_chapter = all_chapters[current_index | minus: 1] %}
+    <a href="{{ prev_chapter.url }}">← {{ prev_chapter.title }}</a>
+  {% else %}
+    <span></span>
+  {% endif %}
+
+  <a href="{{ page.book_url }}">↑ Table of Contents</a>
+
+  {% assign next_index = current_index | plus: 1 %}
+  {% if next_index < total %}
+    {% assign next_chapter = all_chapters[next_index] %}
+    <a href="{{ next_chapter.url }}">{{ next_chapter.title }} →</a>
+  {% else %}
+    <span></span>
+  {% endif %}
+</nav>

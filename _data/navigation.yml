@@ -1,14 +1,15 @@
 main:
-  - title: "Academic"
-    url: /academic/
+  - title: "Information Theory"
+    url: /information-theory/
+  - title: "Cryptography"
+    url: /cryptography/
   - title: "Posts"
     url: /posts/
   - title: "Categories"
     url: /categories/
   # - title: "Tags"
   #   url: /tags/
-  - title: "Quotes"
-    url: /quotes/
+
   - title: "Books"
     url: /books/
   - title: "About"

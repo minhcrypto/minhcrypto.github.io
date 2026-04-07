@@ -12,5 +12,5 @@ Trích một câu trong tiểu thuyết Người lữ hành đơn độc của K
 
 
 Contact info
-- Email: [dinhhoangnhatminh2002@gmail.com](mailto:dinhhoangnhatminh2002@gmail.com)
-- Github: [https://github.com/mayha1](https://github.com/mayha1)
+- Email: [evelyndinhxd@gmail.com](mailto:dinhhoangnhatminh2002@gmail.com)
+- Github: [https://github.com/minhcrypto](https://github.com/mayha1)
